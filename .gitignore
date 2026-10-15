@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.egg-info/
+
+# The real agent in the root folder (created with `analytics-agent new`)
+/agent*.yml
+/instructions.md
+/definitions/
+.env
+
+# Generated during use, for all agents
+logs/
+notebooks/
+
+# Local planning tool
+.mcp/

@@ -1,0 +1,1 @@
+-- The sum of amount in def.valid_order_lines for the period the question concerns.

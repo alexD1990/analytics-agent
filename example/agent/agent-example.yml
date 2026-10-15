@@ -1,0 +1,17 @@
+name: shop-analyst
+
+agent:
+  mode: interactive
+
+connections:
+  - name: crm
+    type: sqlite
+    path: ../data/crm.db
+
+  - name: shop
+    type: sqlite
+    path: ../data/shop.db
+
+  - name: inventory
+    type: sqlite
+    path: ../data/inventory.db

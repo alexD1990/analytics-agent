@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "analytics-agent"
+version = "0.1.0"
+description = "Analytics agent for Claude Desktop: SQL connections and a Python notebook, configured with agent.yml"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "duckdb>=1.2",
+    "mcp[cli]>=1.6,<2",
+    "pydantic>=2",
+    "pyyaml",
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "jupyter_client>=8",
+    "ipykernel>=6",
+    "nbformat>=5",
+]
+
+[project.scripts]
+analytics-agent = "analytics_agent.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
